@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ExchangeRate</title>
+    <script src="exchange.js"></script>
+</head>
+<body>
+<form  >
+    <table border="1px soild">
+        <tr>
+            <td><label for="Amount">Amount</label></td>
+            <td><label for="fC">From Currency</label></td>
+            <td><label for="tC">To Currency</label></td>
+            <td rowspan="2">
+                <input type="button"  onclick="exhcange()" value="Convert"> </td>
+        </tr>
+        <tr>
+            <td><input type="number" id="Amount"></td>
+            <td>
+                <select name="From Currency" id="fC">
+                    <option value="VietNam">VietNam</option>
+                    <option value="USD">USD</option>
+                </select>
+            </td>
+            <td>
+                <select name="To Currency" id="tC">
+                    <option value="USD">USD</option>
+                    <option value="VietNam">VietNam</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <p id="re" style="color: blue"></p>
+</form>
+</body>
+</html>
